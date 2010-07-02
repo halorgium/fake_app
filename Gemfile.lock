@@ -1,0 +1,37 @@
+--- 
+specs: 
+- rake: 
+    version: 0.8.7
+- highline: 
+    version: 1.5.2
+- net-ssh: 
+    version: 2.0.23
+- net-scp: 
+    version: 1.0.2
+- net-sftp: 
+    version: 2.0.4
+- net-ssh-gateway: 
+    version: 1.0.1
+- capistrano: 
+    version: 2.5.19
+- json_pure: 
+    version: 1.4.3
+- rubyforge: 
+    version: 2.0.4
+- hoe: 
+    version: 2.6.1
+- eycap: 
+    version: 0.5.6
+hash: b82c5d27917e0df4a53ab7d1d7c809900bdef992
+sources: 
+- Rubygems: 
+    uri: http://rubygems.org
+dependencies: 
+  eycap: 
+    version: ">= 0"
+    group: 
+    - :default
+  capistrano: 
+    version: ">= 0"
+    group: 
+    - :default

@@ -1,6 +1,6 @@
 # Please install the Engine Yard Capistrano gem
 # gem install eycap
-#require "eycap/recipes"
+require "eycap/recipes"
 
 set :keep_releases, 5
 set :application,   'rackapp'
@@ -29,7 +29,7 @@ default_run_options[:pty] = true # required for svn+ssh:// andf git:// sometimes
 set :real_revision,                     lambda { source.query_revision(revision) { |cmd| capture(cmd) } }
 
 
-task :fail do
+task :foo do
   role :web, 'ec2-184-72-245-150.compute-1.amazonaws.com'
   role :app, 'ec2-184-72-245-150.compute-1.amazonaws.com'
   role :db,  'ec2-184-72-245-150.compute-1.amazonaws.com', :primary => true
