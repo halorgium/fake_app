@@ -47,5 +47,3 @@ end
 # Don't change unless you know what you are doing!
 
 after "deploy", "deploy:cleanup"
-after "deploy:migrations", "deploy:cleanup"
-after "deploy:update_code","deploy:symlink_configs"
