@@ -5,6 +5,7 @@ require "eycap/recipes"
 set :keep_releases, 5
 set :application,   'rackapp'
 set :repository,    'git@github.com:halorgium/fake_app.git'
+set :branch, "master"
 set :deploy_to,     "/data/#{application}"
 set :deploy_via,    :export
 set :monit_group,   "#{application}"
